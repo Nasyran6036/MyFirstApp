@@ -1,0 +1,21 @@
+<ion-app>
+  <ion-header translucent>
+  <ion-toolbar color="primary">
+  <ion-title color="warning">Checkbox</ion-title>
+  </ion-toolbar>
+  </ion-header>
+  <ion-content fullscreen>
+  <ion-list>
+    <ion-radio-group>
+  <ion-item *ngFor="let entry of form">
+    <ion-img [src]="entry.pic"></ion-img>
+    <ion-label>{{entry.val}}</ion-label>
+    <ion-radio > </ion-radio>
+  </ion-item>
+</ion-radio-group>
+</ion-list>
+ </ion-content>
+ </ion-app>
+
+
+

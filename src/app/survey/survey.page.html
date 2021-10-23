@@ -1,0 +1,63 @@
+<ion-app>
+  <ion-header [translucent]="true">
+    <ion-toolbar color="primary">
+
+      <ion-title>SurveyApp</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-toolbar>
+  <br><br>
+  <ion-card-title><b>1.Ionic is the best tools for mobile development</b></ion-card-title>
+<br>
+</ion-toolbar>
+
+<ion-radio-group [(ngModel)]="value_selected">
+<ion-item>
+  <ion-radio value="1"></ion-radio>
+
+  <d style="padding-left:1em;" > </d>
+  
+  <ion-label>Strongly Agree</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-radio value="2"></ion-radio>
+
+    <d style="padding-left:1em;" > </d>
+
+    <ion-label>Agree</ion-label>
+
+  </ion-item>
+  <ion-item>
+    <ion-radio value="3"></ion-radio>
+
+    <d style="padding-left:1em;" > </d>
+
+    <ion-label>Neutral</ion-label>
+
+  </ion-item>
+  <ion-item>
+    <ion-radio value="4"></ion-radio>
+
+    <d style="padding-left:1em;" > </d>
+
+    <ion-label>Disagree</ion-label>
+
+  </ion-item>
+  <ion-item>
+    <ion-radio value="5"></ion-radio>
+
+    <d style="padding-left:1em;" > </d>
+
+    <ion-label>Strongly Disagree</ion-label>
+
+  </ion-item>
+</ion-radio-group>
+
+<ion-content fullscreen class="ion-padding">
+
+      <ion-alert-controller></ion-alert-controller>
+      <ion-button (click)="CreatePrompt()">Submit</ion-button>
+
+    </ion-content>
+  </ion-app>
